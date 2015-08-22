@@ -1,4 +1,6 @@
-<%= form_for @idea, :html => {:multipart => true} do |f| %>
+<div class="row">
+  <div class="col-md-6">
+    <%= form_for @idea, :html => {:multipart => true} do |f| %>
   <% if @idea.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@idea.errors.count, "error") %> prohibited this idea from being saved:</h2>
@@ -28,3 +30,7 @@
     <%= f.submit %>
   </div>
 <% end %>
+
+  </div>
+  
+</div>
